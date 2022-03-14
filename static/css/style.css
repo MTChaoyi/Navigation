@@ -71,7 +71,7 @@ textarea {
 }
 
 .main {
-    padding-top: 5%;
+    padding-top: 2%;
     min-height: 100%;
 }
 
@@ -96,24 +96,14 @@ textarea {
     overflow: hidden;
     margin-left: 250px;
     align-items: center;
-}
-
-/* .logo-left {
-    position: relative;
-    width: 125px;
-    height: 121px;
-    cursor: pointer;
-} */
-
-.logo-right {
     padding-left: 36px;
-    font-size: 36px;
+    font-size: 20px;
     color: rgba(0, 39, 102, 1);
-    /* color: rgba(230, 247, 255, 0.96); */
-    font-family: SourceHanSansSC-regular;
+    width: 450px;
+    padding: 20px 30px;
+    /* background-color: rgba(230, 247, 255, 0.96);
+    border-radius: 20px; */
 }
-
-
 /* logo end  */
 
 
