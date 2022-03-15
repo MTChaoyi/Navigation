@@ -279,6 +279,26 @@ li.google {
     max-width: 1000px;
 }
 
+@media (min-width: 333.3px) and (max-width: 666.5px) {
+    .nav-content {
+        max-width:333.3px;
+    }
+
+    .search-section {
+        max-width:397.3px;
+    }
+}
+
+@media (min-width: 666.6px) and (max-width: 999px) {
+    .nav-content {
+        max-width:666.6px;
+    }
+
+    .search-section {
+        max-width:650.6px
+    }
+}
+
 
 /*  导航内容 end  */
 
@@ -289,10 +309,11 @@ li.google {
 /*-----------------------------简洁版样式定义- 开始---------------------------------------------------*/
 
 .jj-list {
-    width: 333.3px;
+    width: 100%;
     float: left;
     margin-bottom: 30px;
-    padding-right: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
 }
 
 /* .jj-list:nth-of-type(3n) {
@@ -317,7 +338,7 @@ li.google {
     /*以IE盒子模型的width为标准*/
     padding: 1px 1px;
     /*设置div的内边距*/
-    width: 33.33%;
+    width: 105.75px;
     /*div等分成4部分*/
     float: left;
     transform-origin: center top;
