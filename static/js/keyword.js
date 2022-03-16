@@ -166,6 +166,10 @@ $(function () {
     getSearchResult(keyword);
   });
 
+  $(".logo-box").on('click', function (){
+    mimi("nav-mimi","nav-text");
+  })
+
   // 获取搜索引擎类型
   function getSeachType() {
     return $('#search_logo').data('type');
@@ -258,6 +262,41 @@ $(function () {
     });
     if (baseUrl && keyword) {
       window.open(baseUrl.url + keyword, keyword);
+    }
+  }
+
+  var i=5;
+
+  function password() {
+    var testV=1;
+    var pass1=prompt('请输入密码:',"");
+    if(pass1=="0414") {
+      i=-1;
+    } else {
+      i=5;
+    }
+    return "";
+  }
+
+  function display(id1,id2) {
+    var t1=document.getElementById(id1);
+    var t2=document.getElementById(id2);
+    if(t1.style.display=="none"){
+      t1.style.display="";
+      t2.style.display="none";
+    } else {
+      t1.style.display="none";
+      t2.style.display="";
+    }
+  }
+
+  function mimi(id1,id2) {
+    i--;
+    if(i==0){
+      password();
+    }
+    if(i<0){
+      display(id1,id2);
     }
   }
 });

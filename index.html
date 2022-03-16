@@ -20,6 +20,16 @@
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
+  <script>
+    document.oncontextmenu = function () { return false; };
+    document.onkeydown = function () {
+        if (window.event && window.event.keyCode == 123) {
+            event.keyCode = 0;
+            event.returnValue = false;
+            return false;
+        }
+    };
+</script>
 </head>
 
 <body>
@@ -59,7 +69,53 @@
       <!-- 搜索框 end -->
 
       <!-- 导航地址 start -->
-      <div class="nav-content">
+      <div id="nav-mimi" class="nav-content" style="display:none">
+        <div class="jj-list">
+          <div class="jj-list-tit">瑟瑟 · Colos</div>
+          <div class="jj-list-tit">&nbsp;</div>
+          <div class="jj-list-tit">要梯子</div>
+          <ul class="jj-list-con">
+            <li><a href="https://theporndude.com/zh" class="jj-list-link" target="_blank">网站导航</a></li>
+            <li><a href="https://www.synckeys.com/" class="jj-list-link" target="_blank">新奇士</a></li>
+            <li><a href="https://www.zhaiacgb.com/" class="jj-list-link" target="_blank">宅ACG</a></li>
+            <li><a href="https://ecchi.iwara.tv/?language=zh-hans" class="jj-list-link" target="_blank">Iwara</a></li>
+          </ul>
+          <div class="jj-list-tit">&nbsp;</div>
+          <div class="jj-list-tit">不要梯子</div>
+          <ul class="jj-list-con">
+            <li><a href="https://acgnn.cyou/ptl.php?mb=ptl&pages=MTY0NzQyOTAwMg" class="jj-list-link" target="_blank">eilieili</a></li>
+            <li><a href="https://www.acgbox.link/" class="jj-list-link" target="_blank">ACG盒子</a></li>
+            <li><a href="https://dynalist.io/d/Anw6iborxyYFxA5Snbbea9F8" class="jj-list-link" target="_blank">一点游戏</a></li>
+            <li><a href="http://www.galgamezs.net/bbs/forumdisplay.php?fid=8&page=4" class="jj-list-link" target="_blank">很多游戏</a></li>
+            <li><a href="https://xingye.me/game/new/" class="jj-list-link" target="_blank">在线小游戏</a></li>
+          </ul>
+        </div>
+        <div class="jj-list">
+          <div class="jj-list-tit">梯子 · Ladder</div>
+          <div class="jj-list-tit">&nbsp;</div>
+          <div class="jj-list-tit">免费 · 要先有梯子</div>
+          <ul class="jj-list-con">
+            <li><a href="https://www.vpngate.net/cn/" class="jj-list-link" target="_blank">VPN Gate</a></li>
+          </ul>
+          <div class="jj-list-tit">&nbsp;</div>
+          <div class="jj-list-tit">付费 · 可正常访问</div>
+          <ul class="jj-list-con">
+            <li><a href="https://xiyou4you.us/r/?s=22629684" class="jj-list-link" target="_blank">西游</a></li>
+          </ul>
+          <div class="jj-list-tit">&nbsp;</div>
+          <div class="jj-list-tit">能嫖 · 只能嫖一点</div>
+          <ul class="jj-list-con">
+            <li><a href="https://linkhub.today/auth/register?code=PLam" class="jj-list-link" target="_blank">Linkhub</a></li>
+          </ul>
+          <div class="jj-list-tit">&nbsp;</div>
+          <div class="jj-list-tit">安卓 · 不一定能用</div>
+          <ul class="jj-list-con">
+            <li><a href="https://i0.hdslb.com/bfs/album/1be5d4cb3cebd27d9c30631e3f2a77b13c7f0d9c.png" class="jj-list-link" target="_blank">下载链接</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="nav-text" class="nav-content">
         <div class="jj-list">
           <div class="jj-list-tit">工具 · Tools</div>
           <ul class="jj-list-con">
@@ -75,7 +131,6 @@
             <li><a href="https://fanyi.baidu.com/" class="jj-list-link" target="_blank">百度翻译</a></li>
             <li><a href="http://fanyi.youdao.com/" class="jj-list-link" target="_blank">有道翻译</a></li>
             <li><a href="https://www.coolist.net/" class="jj-list-link" target="_blank">酷软清单</a></li>
-            <li><a href="http://ac.scmor.com/" class="jj-list-link" target="_blank">谷歌镜像</a></li>
             <li><a href="http://www.jijidown.com/" class="jj-list-link" target="_blank">b站下载</a></li>
             <li><a href="https://www.speedtest.cn/" class="jj-list-link" target="_blank">测速网</a></li>
             <li><a href="http://ip.tool.chinaz.com/" class="jj-list-link" target="_blank">IP查询</a></li>
@@ -93,6 +148,7 @@
           <div class="jj-list-tit">搜索引擎 · Search Engines</div>
           <ul class="jj-list-con">
             <li><a href="https://www.google.com/" class="jj-list-link" target="_blank">Google</a></li>
+            <li><a href="http://ac.scmor.com/" class="jj-list-link" target="_blank">谷歌镜像</a></li>
             <li><a href="https://www.baidu.com/" class="jj-list-link" target="_blank">百度</a></li>
             <li><a href="https://cn.bing.com/" class="jj-list-link" target="_blank">Bing</a></li>
             <li><a href="https://www.sogou.com/" class="jj-list-link" target="_blank">搜狗搜索</a></li>
@@ -124,6 +180,7 @@
             <li><a href="https://twitter.com/" class="jj-list-link" target="_blank">Twitter</a></li>
             <li><a href="https://www.instagram.com/" class="jj-list-link" target="_blank">Instagram</a></li>
             <li><a href="https://www.facebook.com/" class="jj-list-link" target="_blank">Facebook</a></li>
+            <li><a href="https://web.tel.onl/" class="jj-list-link" target="_blank">Telegram</a></li>
           </ul>
         </div>
         <div class="jj-list">
@@ -223,7 +280,6 @@
   <script type="module" src="./static/js/hitokoto.js"></script>
   <script src="./static/js/jquery.min.js"></script>
   <script src="./static/js/keyword.js"></script>
-
 
 </body>
 
