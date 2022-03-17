@@ -30,10 +30,6 @@ a {
 
 html,
 body {
-    background-color: #7AFFAF;
-    background-image: linear-gradient(to bottom , #7A88FF, #7AFFAF);
-    background-attachment: fixed;
-    z-index: -1;
     height: 100%;
 }
 
@@ -53,6 +49,10 @@ textarea {
 
 .inner-center {
     margin: 0 auto;
+    background-color: #7AFFAF;
+    background-image: linear-gradient(to bottom , #7A88FF, #7AFFAF);
+    background-attachment: fixed;
+    z-index: -1;
 }
 
 .main {
@@ -68,7 +68,7 @@ textarea {
     height: 60px;
     text-align: center;
     margin-top: -60px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     /* position: relative;
     margin-top: -100px;
     clear:both; */
@@ -258,19 +258,23 @@ li.google {
     overflow: hidden;
     margin: auto;
     max-width: 1002px;
+    transition: 0.5s;
 }
 
-@media (min-width: 343px) and (max-width: 452px) {
+@media (min-width: 343px) and (max-width: 476px) {
     .main {
         padding-top: 5%;
+        transition: 0.5s;
     }
 
     .nav-content {
         max-width:348px;
+        transition: 0.5s;
     }
 
     .search-section {
         max-width:263px;
+        transition: 0.5s;
     }
 }
 /*
@@ -281,53 +285,63 @@ li.google {
     }
 } */
 
-@media (min-width: 452px) and (max-width: 561px) {
+@media (min-width: 476px) and (max-width: 585px) {
     .nav-content {
         max-width:457px;
+        transition: 0.5s;
     }
 
     .search-section {
-        max-width:372px
+        max-width:372px;
+        transition: 0.5s;
     }
 }
 
-@media (min-width: 561px) and (max-width: 670px) {
+@media (min-width: 585px) and (max-width: 694px) {
     .nav-content {
         max-width:568px;
+        transition: 0.5s;
     }
 
     .search-section {
         max-width:481px;
+        transition: 0.5s;
     }
 }
 
-@media (min-width: 670px) and (max-width: 779px) {
+@media (min-width: 694px) and (max-width: 803px) {
     .nav-content {
         max-width:675px;
+        transition: 0.5s;
     }
 
     .search-section {
         max-width:590px;
+        transition: 0.5s;
     }
 }
 
-@media (min-width: 779px) and (max-width: 888px) {
+@media (min-width: 803px) and (max-width: 912px) {
     .nav-content {
         max-width:784px;
+        transition: 0.5s;
     }
 
     .search-section {
         max-width:699px;
+        transition: 0.5s;
     }
 }
 
-@media (min-width: 888px) and (max-width: 970px) {
+@media (min-width: 912px) and (max-width: 1020px) {
     .nav-content {
         max-width:893px;
+        transition: 0.5s;
     }
 
     .search-section {
         max-width:808px;
+        transition: 0.5s;
     }
 }
 /*  导航内容 end  */
@@ -418,7 +432,7 @@ li.google {
     font-weight: 700;
     text-align: center;
     line-height: 44px;
-    transition: all 0.2s;
+    transition: all 0.5s;
     border-radius: 10px;
 }
 
